@@ -1,0 +1,1 @@
+select *, Type RequirementCategory from ClaimTypeEligibilityRequirements
