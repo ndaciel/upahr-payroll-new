@@ -1,0 +1,55 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Debug build
+**/bin/Debug/
+**/bin/Release/
+**/obj/Debug/
+**/obj/Release/
+
+# Visual Studio files
+.vs/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+packages/
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Publish output
+publish/
+[Pp]ublish/
+
+# Test Results
+TestResults/
+*.trx
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db

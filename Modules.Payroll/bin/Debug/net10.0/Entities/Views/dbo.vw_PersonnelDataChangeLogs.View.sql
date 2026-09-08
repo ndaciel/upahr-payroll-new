@@ -65,6 +65,8 @@ SELECT
   employee.InsertedBy,
   employee.UpdateStamp,
   employee.UpdatedBy,
+  employee.DeleteStamp,
+  employee.DeletedBy,
   employee.EffectiveDate,
   employee.ExpiredDate, 
   employee.IsApplied,
@@ -118,3 +120,5 @@ FROM
   LEFT JOIN dbo.Locations AS locations ON locations.Id = employee.CountryId
   LEFT JOIN dbo.CareerTransitions AS careerTransition ON careerTransition.Id = employee.CareerTransitionId
   LEFT JOIN dbo.CareerTransitionTypes AS careerTransitionType ON careerTransitionType.Id = careerTransition.TransitionTypeId
+WHERE
+  employee.DeleteStamp IS NULL
