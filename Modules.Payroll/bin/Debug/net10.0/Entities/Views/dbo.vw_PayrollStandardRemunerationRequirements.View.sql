@@ -1,7 +1,0 @@
-SELECT 
-PayrollStandardRemunerationId, RequirementId, 
-Type AS RequirementCategory, 
-PayrollStandardRemunerationId StandardRemunerationId,
-RangeMin,
-RangeMax
-FROM PayrollStandardRemunerationEligibilityRequirements

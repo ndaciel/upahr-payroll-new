@@ -1,12 +1,8 @@
 # Build results
 [Bb]in/
 [Oo]bj/
-
-# Debug build
-**/bin/Debug/
-**/bin/Release/
-**/obj/Debug/
-**/obj/Release/
+**/[Bb]in/
+**/[Oo]bj/
 
 # Visual Studio files
 .vs/
@@ -27,13 +23,19 @@
 *.exe
 *.pdb
 *.cache
+*.resources
 
 # Logs
 *.log
+logs/
 
 # NuGet packages
 *.nupkg
 packages/
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
 
 # ASP.NET Core
 appsettings.Development.json
