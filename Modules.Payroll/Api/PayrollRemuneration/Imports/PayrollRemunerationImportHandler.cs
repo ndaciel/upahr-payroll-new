@@ -1,9 +1,12 @@
-﻿using Shared;
+using Shared;
 
 namespace Modules.Payroll.Api.PayrollRemuneration.Imports;
 
-public class PayrollRemunerationImportHandler
+public class PayrollRemunerationImportHandler : IImportHandler
 {
+    public string? UserScopes { get; set; }
+    public string? DataAccessScopes { get; set; }
+
     public PayrollRemunerationImportHandler(
         object db,
         object file,
@@ -15,8 +18,8 @@ public class PayrollRemunerationImportHandler
     }
 
     public Task<BaseImportResult> ExecuteAsync(
-        bool allowPartial,
-        string? notes)
+        bool allowPartialImport = false,
+        string? notes = null)
     {
         return Task.FromResult(new BaseImportResult());
     }
