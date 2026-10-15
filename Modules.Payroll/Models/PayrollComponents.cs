@@ -1,6 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using Core.Base;
+using Entities;
 using Dapper.Contrib.Extensions;
 
 namespace Modules.Payroll;
