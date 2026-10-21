@@ -6,6 +6,10 @@ public class PayrollIncidentalPayMatrixImportHandler : IImportHandler
 {
     public string? UserScopes { get; set; }
     public string? DataAccessScopes { get; set; }
+    public string? UserId { get; set; }
+    public string? WorkspaceId { get; set; }
+    public string? WorkspaceName { get; set; }
+    public IImportLogStore? ImportLogStore { get; set; }
 
     public PayrollIncidentalPayMatrixImportHandler(
         object db,
