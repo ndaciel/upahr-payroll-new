@@ -11,6 +11,7 @@ public class PayrollRemunerationImportHandler : IImportHandler
     public string? WorkspaceName { get; set; }
     public IImportLogStore? ImportLogStore { get; set; }
     public IImportProgressSink Progress { get; set; } = NullImportProgressSink.Instance;
+    public string[] AllowedExtensions => [".csv"];
 
     public PayrollRemunerationImportHandler(
         object db,
